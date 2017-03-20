@@ -63,7 +63,7 @@ section {
       width: 150px; }
 
 .main_head {
-  min-height: 480px;
+  min-height: 490px;
   padding-top: 20px; }
 
 .loader {
@@ -94,15 +94,17 @@ section {
   float: left; }
   .logo_container img {
     z-index: 1;
-    width: 60px;
-    height: 60px;
-    position: relative; }
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    margin: 0 18px; }
 
 svg {
   height: 60px;
   width: 60px;
-  z-index: 1;
-  position: relative; }
+  z-index: 101;
+  position: relative;
+  color: #fff; }
 
 .toggle_mnu {
   width: 60px;
@@ -243,7 +245,8 @@ svg path {
     .top_wrapper .top_descr .top_centered {
       display: table-cell;
       text-align: center;
-      vertical-align: middle; }
+      vertical-align: middle;
+      background-color: rgba(0, 0, 0, 0.3); }
   .top_wrapper .top_text {
     display: inline-block;
     -webkit-transition: all 1s ease;
@@ -252,17 +255,20 @@ svg path {
     .top_wrapper .top_text p {
       margin: 0;
       text-transform: uppercase;
+      font-size: 1.5em;
+      font-weight: 300;
       -webkit-animation-delay: 1s;
       -moz-animation-delay: 1s;
       animation-delay: 1s; }
     .top_wrapper .top_text h1 {
       display: inline-block;
-      padding: 10px 35px;
+      padding: 0px 35px;
       color: #fff;
       text-transform: uppercase;
       font-weight: bold;
-      font-size: 2.8em;
-      background-color: rgba(0, 0, 0, 0.1);
+      font-size: 3.2em;
+      margin: 0.18em 0;
+      background-color: transparent;
       margin-left: 20px;
       margin-right: 20px;
       -webkit-animation-delay: 0.5s;
@@ -273,7 +279,7 @@ svg path {
   background-color: #000; }
 
 .main_footer {
-  padding: 50px 0;
+  padding: 20px 0;
   font-size: 13px;
   font-weight: 300; }
   .main_footer .social_wrap {
@@ -301,6 +307,12 @@ svg path {
   margin-bottom: 10px; }
 .s_about .social_wrap {
   margin-top: 25px; }
+
+.s_about .square {
+  list-style-type: square;
+  margin-left: 20px; }
+  .s_about .square span {
+    margin-left: 15px; }
 
 .social_wrap li {
   display: inline-block;
@@ -429,7 +441,14 @@ svg path {
   .contact_box .contacts_icon {
     font-size: 30px; }
   .contact_box p {
-    margin-top: 5px; }
+    margin-top: 5px;
+    margin-bottom: 0px; }
+
+.contact_box .map {
+  margin-top: 10px;
+  min-height: 250px;
+  max-width: 100%;
+  background-color: #E1D6B0; }
 
 .main_form button {
   border: none;
